@@ -1,4 +1,6 @@
-class Turn 
+# TODO this is currently not being used. Could implement to make game.rb smaller
+
+class Turn
   attr_accessor :current_player
 
   def initialize(player1, player2)
