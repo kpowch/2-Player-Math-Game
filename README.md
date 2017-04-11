@@ -3,21 +3,18 @@
 Create a 2-Player math game where players take turns to answer simple math addition problems. A new math question is generated for each turn by picking two numbers between 1 and 20. The player whose turn it is is prompted the question and must answer correctly or lose a life.
 
 ## Learning Outcomes
-
-<li> Can create a multi-class Project using Ruby and OOP
-<li> Can demonstrate encapsulation with Classical OOP
-<li> Can demonstrate separation of concern between I/O and logic using Classes
-<li> Can demonstrate message passing between objects in Ruby
-
-
+* Can create a multi-class Project using Ruby and OOP
+* Can demonstrate encapsulation with Classical OOP
+* Can demonstrate separation of concern between I/O and logic using Classes
+* Can demonstrate message passing between objects in Ruby
 
 ## Goal
-Plan out the strategy in building an OOP-based command-line application with Ruby in order to practice and demonstrate OOP fundamentals.
+Plan out the strategy to build an OOP-based command-line application with Ruby in order to practice and demonstrate OOP fundamentals, and then implement it.
 
 ## Details
-Both players start with 3 lives. They lose a life if they mis-answer a question. If a player gets a question wrong, the game should output the new scores for both players, so players know where they stand.
+Both players start with 3 lives. They lose a life if they answer a question wrong. The game should output the new scores for both players, so players know where they stand.
 
-The game doesn’t end until one of the players loses all their lives. At this point, the game should announce who won and what the other player’s score is.
+The game doesn’t end until one of the players loses all their lives. At this point, the game should announce who won and what the other player’s score is. It will also prompt if the players want to play again.
 
 ### Example prompt
 ```
@@ -40,26 +37,23 @@ Goodbye!
 
 ## Tasks
 ### Extract Nouns for Classes (and their associated rolls)
-Math game:
-<ul>
-<li> Evaluates if command-line answer is correct??
-<li> Will contain the game loop (i.e. where each instance of the loop is the other player's turn)
-</ul>
+MathGame:
+* Stores constants for the other classes
+
+Game:
+* Contains the game loop and associated methods
+* i.e. starts game, makes players, keeps track of current player, gets question and evaluates answers then updates player appropriately, keeps track of when to end the game
+
+GameMaster:
+* Prints text to the CLI or prompts the user for input
 
 Player:
-<ul>
-<li> Initialize a player
-<li> Stores state: how many lives the player has
-</ul>
+* Initializes a player 
+* Stores the player's state (i.e. number of lives, and number of correct answers)
 
-Turn:
-<ul>
-<li> Stores state: who is `current_player`
-<li> Determines who goes next
-</ul>
+Question: 
+* Makes a question 
+* Stores question answer for evaluation
 
-Question:
-<ul>
-<li> Generates new question by picking 2 numbers between 1 & 20
-<li> Answer will have to be public
-</ul>
+Main (not a class but a file): 
+* File that gets called to run the game
