@@ -34,8 +34,7 @@ Player 1 wins with a score of 1/3
 Goodbye!
 ```
 
-# Tasks
-## Extract Nouns for Classes (and their associated rolls)
+# Classes (and associated rolls)
 MathGame:
 * Stores constants for the other classes
 
