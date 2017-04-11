@@ -1,6 +1,10 @@
 # Description
 Create a 2-Player math game where players take turns to answer simple math addition problems. A new math question is generated for each turn by picking two numbers between 1 and 20. The player whose turn it is is prompted the question and must answer correctly or lose a life.
 
+# How to Run
+Download the repo, make sure you have ruby installed, then run `ruby main.rb`.
+Note: made using ruby 2.3.3
+
 # Learning Outcomes
 * Can create a multi-class Project using Ruby and OOP
 * Can demonstrate encapsulation with Classical OOP
