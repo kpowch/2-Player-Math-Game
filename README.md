@@ -3,12 +3,13 @@
 Create a 2-Player math game where players take turns to answer simple math addition problems. A new math question is generated for each turn by picking two numbers between 1 and 20. The player whose turn it is is prompted the question and must answer correctly or lose a life.
 
 ## Learning Outcomes
-<ul>
+
 <li> Can create a multi-class Project using Ruby and OOP
 <li> Can demonstrate encapsulation with Classical OOP
 <li> Can demonstrate separation of concern between I/O and logic using Classes
 <li> Can demonstrate message passing between objects in Ruby
-</ul>
+
+
 
 ## Goal
 Plan out the strategy in building an OOP-based command-line application with Ruby in order to practice and demonstrate OOP fundamentals.
